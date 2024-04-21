@@ -179,6 +179,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_dpmframework
 
+# Dynamic Partitions
+PRODUCT_BUILD_SUPER_PARTITION := true
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
