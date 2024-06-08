@@ -241,10 +241,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
-# IFAA manager
-PRODUCT_PACKAGES += \
-    IFAAService
-
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
