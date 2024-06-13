@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -100,6 +101,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
+    
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sdm660
@@ -212,6 +218,7 @@ PRODUCT_PACKAGES += \
     libbatching \
     libgeofencing \
     libgnss \
+    libpower.vendor \
     libsensorndkbridge \
     libwifi-hal-ctrl
 
@@ -238,6 +245,7 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
+    libhidlmemory.vendor \
     libhwbinder.vendor
 
 # IDC
@@ -356,8 +364,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.0 \
+    libnetutils.vendor \
     android.hardware.secure_element@1.0.vendor \
     rild \
+    libprotobuf-cpp-full \
+    libsqlite.vendor:64 \
     librmnetctl
 
 PRODUCT_PACKAGES += \
